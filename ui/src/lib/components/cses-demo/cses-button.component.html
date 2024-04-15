@@ -1,0 +1,9 @@
+<button
+  [class]="['cses-button', config.size]"
+  [attr.data-type]="config.type"
+  [disabled]="config.disabled" (click)="onClick($event)">
+  <i
+    [class]="['cses-button__icon', config.iconPrefix, config.iconName]"
+    *ngIf="config.iconName"></i>
+  <span>{{data}}</span>
+</button>
